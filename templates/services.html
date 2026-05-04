@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Services — Sync Pillar{% endblock %}
+{% block meta_description %}Scalable web and mobile solutions for modern enterprises. Custom development, performance
+optimization, and e-commerce platforms.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-xl pt-12">
+    <div class="max-w-3xl">
+        <span class="text-secondary font-label-sm text-label-sm mb-4 block tracking-[0.2em] uppercase">Development
+            Excellence</span>
+        <h1 class="font-h1 text-h1 text-on-surface mb-6">Scalable Web &amp; Mobile Solutions for Modern Enterprises.
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">We bridge the gap between technical
+            complexity and business growth with precision engineered digital products across web and mobile platforms.
+        </p>
+    </div>
+</section>
+
+<!-- Services Bento Grid -->
+<section class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- Custom Development - Large Feature -->
+        <div
+            class="md:col-span-8 group bg-white border border-outline-variant p-lg rounded-lg hover:shadow-[0_10px_30px_rgba(15,23,42,0.05)] hover:border-secondary transition-all duration-300">
+            <div class="flex flex-col md:flex-row gap-lg">
+                <div class="flex-1">
+                    <span class="material-symbols-outlined text-secondary text-4xl mb-6">devices</span>
+                    <h2 class="font-h2 text-h2 mb-4">Web &amp; Mobile Apps</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">High performance digital
+                        experiences tailored to your brand identity. We build native feeling mobile applications and
+                        robust web platforms with a focus on intuitive UX.</p>
+                    <ul class="space-y-3 font-label-sm text-label-sm text-on-surface">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm text-secondary">check_circle</span> Mobile
+                            Development</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+                            Cross Platform Architectures</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm text-secondary">check_circle</span> Modern
+                            Component Frameworks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Stack - Small Column -->
+        <div class="md:col-span-4 bg-primary-container p-lg rounded-lg flex flex-col justify-between">
+            <div>
+                <h3 class="font-h3 text-h3 text-on-primary mb-4">The Stack</h3>
+                <p class="font-body-md text-body-md text-on-primary-container mb-6">Our choices are driven by stability
+                    and performance.</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">Python</span>
+                <span class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">Next.js</span>
+                <span class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">Flutter</span>
+                <span class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">Node.js</span>
+                <span
+                    class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">PostgreSQL</span>
+                <span class="bg-white/10 text-on-primary px-3 py-1 rounded text-label-sm font-label-sm">AWS</span>
+            </div>
+        </div>
+
+        <!-- Performance Optimization -->
+        <div
+            class="md:col-span-6 group bg-white border border-outline-variant p-lg rounded-lg hover:shadow-[0_10px_30px_rgba(15,23,42,0.05)] hover:border-secondary transition-all duration-300">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-6">speed</span>
+            <h2 class="font-h3 text-h3 mb-4">Performance Optimization</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">We eliminate bottlenecks. Our optimization
+                service focuses on Core Web Vitals, reducing app launch times, and maximizing server-side efficiency.
+            </p>
+            <div
+                class="bg-surface-container-low rounded p-4 font-mono text-sm border border-outline-variant text-on-surface-variant overflow-x-auto">
+
+            </div>
+        </div>
+
+        <!-- E-commerce Solutions -->
+        <div
+            class="md:col-span-6 group bg-white border border-outline-variant p-lg rounded-lg hover:shadow-[0_10px_30px_rgba(15,23,42,0.05)] hover:border-secondary transition-all duration-300">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-6">shopping_bag</span>
+            <h2 class="font-h3 text-h3 mb-4">E-commerce Solutions</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-8">Scalable stores built for conversion. From
+                custom checkouts to headless mobile commerce integrations.</p>
+            <div class="flex items-center justify-between border-t border-outline-variant pt-6">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 mt-xl mb-xl">
+    <div
+        class="bg-surface-container-highest rounded-lg p-lg md:p-xl flex flex-col md:flex-row items-center justify-between gap-lg">
+        <div class="max-w-xl text-center md:text-left">
+            <h2 class="font-h2 text-h2 mb-4">Ready to optimize your tech stack?</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Consult with our lead developers today.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="{{ url_for('contact') }}"
+                class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity text-center">Book
+                a Consult</a>
+            <a href="#"
+                class="bg-transparent border border-outline text-on-surface px-8 py-3 rounded-lg font-label-sm text-label-sm hover:border-primary transition-all text-center">View
+                Process</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
