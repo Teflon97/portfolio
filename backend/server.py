@@ -8,9 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize Flask app
-# Since server.py is in backend/, we need to tell Flask where the templates and static folders are.
-# By default, Flask looks for templates and static in the same directory as the script.
-# We'll set them to the root directory relative to this script.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 app = Flask(
     __name__,
